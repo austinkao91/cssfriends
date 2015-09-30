@@ -1,0 +1,38 @@
+/* PHASE 2: Notifications */
+.badge {
+    display: inline-block;
+    border-radius: 50%;
+    background: #000000;
+    padding: 0 6px;
+}
+
+li:hover .badge {
+  background: #FF0000;
+}
+
+
+.notification {
+  position: absolute;
+  display: none;
+}
+
+.notification li {
+  overflow: hidden;
+  border: 1px solid grey;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.notification li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+li:hover .notification {
+  display: block;
+  white-space: nowrap;
+}
+
+.notification li:hover {
+  background-color: #eee;
+}
