@@ -14,13 +14,21 @@ li:hover .badge {
 .notification {
   position: absolute;
   display: none;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .notification li {
+  left: -2px;
   overflow: hidden;
-  border: 1px solid grey;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   background-color: #FFFFFF;
   color: #000000;
+  position: relative;
+  z-index: 1;
 }
 
 .notification li:last-child {
